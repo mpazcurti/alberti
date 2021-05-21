@@ -1,0 +1,149 @@
+#encabezado {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1em;
+    padding: 10em 3em 3em 10em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#bg {
+    background-image: url("../images/portadaa.jpeg");
+    background-position:center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 132vh;
+    z-index: -1;
+}
+
+section {
+    width: 100%;
+    height: 30%;
+    float: left;
+}
+
+
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    float: left;
+    margin-left: 10%;
+}
+
+.nav-list {
+    position: absolute;
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.nav-list li a {
+    text-decoration:steelblue;
+    border-radius: 1em 2em/3em 4em;
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    transition: 1.5s;
+    padding: 20px;
+}
+
+.nav-list li a:hover {
+    background-color:slategrey;
+    color: rgb(0, 0, 33);
+}
+
+.nav-list li a.current {
+    background-color:slategrey;
+    color: rgb(0, 0, 33);
+}
+
+footer {
+    display: inline;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    height: 30px;
+    color: rgb(247, 247, 247);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+
+.links {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+i {
+    margin-right: 1px;
+    transition: 1s;
+}
+
+i:hover {
+    color: rgb(189, 58, 108);
+}
+
+#texto {
+    display: block;
+    font-family: sans-serif;
+    text-align: center;
+    background-color:black;
+    opacity: 0.9;
+    margin-left: 15em;
+    height: 100%;
+    width: 60%;
+    color: ivory;
+    font-size: 1em;
+}
+
+#comollegar {
+    margin: auto;
+    width: 60%;
+    padding: 5px;
+}
+#comollegar iframe {
+    width: 50em;
+    height: 50em;
+    margin: 0 auto;
+    position: center;
+    display: flex;
+}
+
+form {
+    background-color: darkgrey;
+    width: 47%;
+    height: 25em;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.7;
+    text-align: left;
+    border-radius: 0.2em;
+
+}
+
+#contacto {
+    font-family: sans-serif;
+    text-align: center;
+    color: ivory;
+    font-size: 1.3em;
+}
+
+
