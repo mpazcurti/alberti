@@ -11,6 +11,13 @@
     z-index: -1;
 }
 
+.contenedor {
+    width: 90%;
+    max-width: 100px;
+    margin-left: 10em;
+    overflow: hidden;
+}
+
 #encabezado {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -25,13 +32,11 @@ h1 {
 
 section {
     height: 30%;
-    float: left;
     width: 97%;
     align-self: center;
 }
 
 #menu {
-    float: left;
     margin-left: 10%;
 }
 
@@ -89,9 +94,8 @@ footer {
 }
 
 .links a {
- color: floralwhite;
+    color: floralwhite;
 }
-
 
 i {
     margin-right: 1px;
@@ -164,6 +168,208 @@ form {
     opacity: 0.7;
     text-align: left;
     border-radius: 0.2em;
+}
+
+
+/* DISTRIBUCION PANTALLAS GRANDES */
+
+@media (min-width: 1200px) {
+    #encabezado {
+        padding: 1em;
+        margin-left: 5em;
+    }
+    #cuerpo {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10em;
+    }
+    .nav-list {
+        display: flexbox;
+    }
+    .links {
+        width: 30%;
+        position: center;
+    }
+}
+
+@media (min-width: 1500px) {
+    #encabezado {
+        padding: 1em;
+        margin-left: 5em;
+    }
+    #cuerpo {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10em;
+    }
+    .nav-list {
+        margin-left: 7em;
+        display: flexbox;
+    }
+    #texto {
+        margin-left: 30em;
+        width: 40%;
+        display: flexbox;
+    }
+    .links {
+        width: 30%;
+        position: center;
+    }
+}
+
+@media (min-width: 1720px) and (max-width: 1985px) {
+    .nav-list {
+        margin-left: 15em;
+        display: flexbox;
+    }
+    #texto {
+        margin-left: 35em;
+        width: 40%;
+        display: flexbox;
+    }
+    .links {
+        width: 10%;
+        position: center;
+    }
+}
+
+@media (min-width: 1986px) and (max-width: 2120px) {
+    .nav-list {
+        margin-left: 20em;
+        display: flexbox;
+    }
+    #texto {
+        margin-left: 35em;
+        width: 40%;
+        display: flexbox;
+    }
+    .links {
+        width: 10%;
+        position: center;
+    }
+}
+
+@media (min-width: 2121px) and (max-width: 2348px) {
+    .nav-list {
+        margin-left: 28em;
+        display: flexbox;
+    }
+    #texto {
+        margin-left: 40em;
+        width: 40%;
+        display: flexbox;
+    }
+    #contacto {
+        margin-left: 30em;
+        width: 50%;
+    }
+    .links {
+        width: 10%;
+        position: center;
+    }
+}
+
+@media (min-width: 2348px) and (max-width: 2689px) {
+    .nav-list {
+        margin-left: 35em;
+        display: flexbox;
+    }
+    #texto {
+        margin-left: 47em;
+        width: 37%;
+        display: flexbox
+    }
+    #contacto {
+        margin-left: 30em;
+        width: 50%;
+    }
+    .links {
+        width: 10%;
+        position: center;
+    }
+}
+
+
+/*NOTEBOOKS CHICAS, TABLETS GRANDES O APAISADAS*/
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .nav-list {
+        margin-right: 4em;
+        display: inline;
+    }
+    #comollegar {
+        margin-right: 18em;
+    }
+}
+
+
+/*TABLETS, TELEFONOS APAISADOS*/
+
+@media (min-width: 550px) and (max-width: 900px) {
+    #contacto {
+        margin-top: 5em;
+    }
+    #comollegar {
+        width: 70%;
+        margin-right: 20em;
+        margin-top: 4em;
+    }
+    .codoacodo {
+        margin-bottom: 10em;
+        margin-top: 2em;
+    }
+    .contenedor {
+        margin-top: -2em;
+    }
+    #encabezado {
+        margin-top: -1em;
+    }
+    #texto {
+        margin-left: 10em;
+    }
+    .links {
+        width: 30%;
+        position: center;
+    }
+}
+
+
+/*CELULARES*/
+
+@media (min-width: 350px) and (max-width: 550px) {
+    #encabezado {
+        padding: 1em;
+        margin-left: 5em;
+    }
+    #cuerpo {
+        margin-top: 22em;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10em;
+    }
+    .nav-list {
+        margin-left: -5em;
+        display: -moz-inline-box;
+    }
+    #texto {
+        margin-left: 3em;
+        width: 85%;
+        display: flexbox;
+    }
+    .codoacodo {
+        margin-bottom: 30em;
+    }
+    #comollegar {
+        display: flex;
+        width: 80%;
+        margin-right: 20em;
+        margin-top: 4em;
+    }
+    .links {
+        width: 50%;
+        position: center;
+        margin-right: 3em;
+    }
 }
 
 
